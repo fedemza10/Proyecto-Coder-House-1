@@ -1,0 +1,339 @@
+
+* { margin: 0px;
+padding: 0px;}
+
+header { 
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   
+}
+.header__LogoEmpresa { 
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: 3%; 
+ width: 50%;
+ }
+ .header_text { 
+   text-align: center;
+ }
+.imagenPrincipal { 
+ width: 75%; 
+ margin-left: 10%;
+  height:100%;}
+h1 {
+ color:rgb(92, 29, 29);
+ font-size: 3em;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold; 
+ word-spacing: 0.5cm;
+ margin-top: 5%;
+ }
+.body {
+  background-image: linear-gradient(to bottom left, rgb(243, 95, 10), rgb(139, 100, 26));
+ width:100%; 
+ height: 100%;}
+
+ /* Esto es Grid */
+
+ /* Grid Index */
+#grid__Body { 
+  display: grid;
+  grid-template-areas: 
+  " header header header header "
+  " menu menu menu menu "
+  " img img img img "
+  " img img img img "
+  " footer footer footer footer "; 
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-template-rows: auto;}
+ .grid__Head { 
+  grid-area: header;}
+.grid__Menu {
+  grid-area: menu; 
+  width: 90%;
+  margin-left: 5%;
+ }
+.grid__Img {
+ grid-area: img;
+ padding: 20px;
+ display: flex;
+ justify-content: center;}
+.grid__Footer {  
+ grid-area: footer;}
+
+ /* Grid Mision Vision Quienes somos*/
+
+#grid__Body--Vision { 
+  display: grid;
+  grid-template-areas: 
+  " header header header header "
+  " menu menu menu menu "
+  " article article article article "
+  " footer footer footer footer "; 
+ grid-template-columns: 1fr 1fr 1fr 1fr ;
+ grid-template-rows: auto}
+ .grid__Head { 
+  grid-area: header;
+  }
+ .grid__MenuV {
+  grid-area: menu;
+  width: 90%;
+  margin-left: 5%;
+  }
+ .grid__Article {
+  grid-area: article;
+  margin-left: 5%; width: 95%;}
+  .grid__Footer {
+    margin-top: 5%;
+   grid-area: footer;}
+
+  /* Grid Servicios*/
+
+ #grid__Body--Servicios { 
+  display: grid;
+  grid-template-areas: 
+  " header header header header "
+  " menu menu menu menu "
+  " up up up up "
+  " down down down down "
+  " footer footer footer footer "; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto }
+  .grid__Head { 
+    grid-area: header;
+    }
+.grid__MenuS {
+  grid-area: menu; 
+  width: 90%;
+  margin-left: 5%;
+ }
+.grid__Up {
+ grid-area: Up;}
+.grid__Down {
+ grid-area: Down;}
+ .grid__Footer {
+  grid-area: footer;}
+
+
+  /* Grid Clientes*/
+
+#grid__Body--Clientes { 
+  display: grid;
+  grid-template-areas: 
+  " header header header header "
+  " menu menu menu menu "
+  " img img img img "
+  " img img img img "
+  " footer footer footer footer "; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto}
+  .grid__Head { 
+    grid-area: header;
+    }
+.grid__MenuC {
+  grid-area: menu; 
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%}
+.grid__ImgC {
+ grid-area: img;}
+ .grid__Footer {
+  grid-area: footer;}
+
+  /* Grid Contacto */
+
+#grid__Body--Contacto { 
+  display: grid;
+  grid-template-areas: 
+  " header header header header "
+  " menu menu menu menu "
+  " section section section section "
+  " section section section section "
+  " footer footer footer footer "; 
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ grid-template-rows: auto }
+ .grid__Head { 
+  grid-area: header;
+  }
+ .grid__MenuC {
+  grid-area: menu;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  }
+ .grid__SectionC {
+  grid-area: section;
+  }
+  .grid__Footer {
+  
+   grid-area: footer;}
+
+  /* Grid Trabajar  */
+
+#grid__Body--Trabajar { 
+  display: grid;
+  grid-template-areas: 
+  " header header header header "
+  " menu menu menu menu "
+  " section section section section "
+  " section section section section "
+  " footer footer footer footer "; 
+ grid-template-columns: 1fr 1fr 1fr 1fr ;
+ grid-template-rows: auto }
+ .grid__Head { 
+  grid-area: header;
+   }
+ .grid__MenuT {
+  grid-area: menu;
+  width: 90%;
+  margin-left: 5%;;
+  }
+ .grid__SectionT {
+  grid-area: section;
+  }
+  .grid__Footer {
+   grid-area: footer;}
+
+  @media screen and (max-width: 300px) { 
+    .header { height: 50%; width: 50%;
+    }
+    #grid__Body{ 
+    grid-template-areas: 
+    "header header"
+    "menu menu"
+    "img img"
+    "footer footer"}}  
+
+/* estos es menu*/ 
+
+
+.boton__Menu1 { 
+ display: flex;
+flex-direction: row ; 
+ justify-content: space-between; 
+flex-wrap: wrap;
+list-style: none; 
+font-family: Arial, Helvetica, sans-serif;
+font-size: 2em;
+font-weight: bold;
+transition: all 2s;
+color: rgb(7, 24, 80)
+} 
+.boton__Menu1 :hover { 
+
+background-color: rgb(218, 39, 27);
+
+}
+ul li a { 
+text-decoration: none; display: flex;
+flex-direction: row ;
+justify-content: center; color: rgb(7, 24, 80) ;
+}
+/* esto es footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+   justify-items: center;
+  justify-content: center;
+   }
+  
+  body footer button a {
+  color: rgb(192, 135, 13);
+  font-size: 1.5em; 
+  text-decoration: none; 
+  text-align: center;
+  justify-self: center;
+   
+  }   
+  body footer button { 
+   width: 20%;
+   margin-left:40% ;}
+  
+
+
+ 
+  .firma__Footer {
+  color: rgb(7, 24, 80);
+  text-align: center;
+  font-family: sans-serif; 
+  font-style: italic;
+  margin-top: 5%;
+  }
+
+ 
+
+/* resto */
+.titulo__1 {
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(2, 12, 44);
+text-align: center;
+margin-left: 10%;
+box-sizing: border-box;
+width: 80%; 
+height: 30%;
+padding: 5px;
+border: 1px;}
+.titulo__2 {
+color: rgb(160, 12, 12);
+text-align: center;}
+
+
+/* esto es texto de secciones */
+.parrafoTxt {
+box-sizing: border-box; 
+font-family: 'Open Sans', sans-serif; 
+background-color: rgb(226, 226, 229);
+font-size: 120% ;
+width: 90%;
+margin-left: 5%;
+text-align: justify;
+line-height: 1.5; 
+word-spacing: normal;
+
+}
+
+
+   /* esto es tablas en la pagina servicios */
+.tabla__Th { 
+color: rgb(59, 52, 38); 
+border-style: groove;
+font-style: italic;
+font-weight: bold; }
+.Tabla__Tr { 
+color: rgb(59, 52, 38); 
+border-style: groove; 
+font-weight: bold; }
+.tabla {
+margin-left: 5%; 
+margin-bottom: 10%;
+width: 90%;}
+
+/* esto es formulario de contacto y trabajar con nosotros*/
+.formulario1 { 
+display: block; 
+margin-left: 35%; 
+margin-top: 3%;}
+.formulario1__Flex { 
+box-sizing: border-box; 
+width: 50%; 
+height: 50%; 
+font-family: Arial, Helvetica, sans-serif;
+display: flex; ;
+flex-direction: column; 
+align-content: center;}
+.input { 
+background: white; 
+transition: all 2s}
+.input:focus {
+ zoom: 180%;}
+
+.clientes {
+box-sizing: border-box; 
+height: 80%;
+width: 40%; 
+margin-top: 4%;}
