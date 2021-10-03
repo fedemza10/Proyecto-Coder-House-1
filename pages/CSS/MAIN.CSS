@@ -59,7 +59,7 @@ h1 {
  }
 .grid__Img {
  grid-area: img;
- padding: 20px;
+ margin-top: 3%;
  display: flex;
  justify-content: center;}
 .grid__Footer {  
@@ -138,7 +138,7 @@ h1 {
   grid-area: menu; 
   width: 90%;
   margin-left: 5%;
-  margin-top: 5%}
+  }
 .grid__ImgC {
  grid-area: img;}
  .grid__Footer {
@@ -163,7 +163,6 @@ h1 {
   grid-area: menu;
   width: 90%;
   margin-left: 5%;
-  margin-top: 5%;
   }
  .grid__SectionC {
   grid-area: section;
@@ -273,6 +272,7 @@ font-family: Arial, Helvetica, sans-serif;
 color: rgb(2, 12, 44);
 text-align: center;
 margin-left: 10%;
+margin-top: 5%;
 box-sizing: border-box;
 width: 80%; 
 height: 30%;
@@ -280,19 +280,21 @@ padding: 5px;
 border: 1px;}
 .titulo__2 {
 color: rgb(160, 12, 12);
-text-align: center;}
+text-align: center;
+margin-top: 2%;}
 
 
 /* esto es texto de secciones */
 .parrafoTxt {
 box-sizing: border-box; 
 font-family: 'Open Sans', sans-serif; 
-background-color: rgb(226, 226, 229);
+background-color: rgb(199, 199, 204);
 font-size: 120% ;
 width: 90%;
 margin-left: 5%;
+margin-top: 3%;
 text-align: justify;
-line-height: 1.5; 
+line-height: 2.5; 
 word-spacing: normal;
 
 }
