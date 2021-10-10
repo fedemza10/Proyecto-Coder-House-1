@@ -15,7 +15,7 @@
         <img class="header__LogoEmpresa " src="./images/clear_logo.jpg" alt="logo de la empresa">
 
       
-      <div class="header_text">
+      <div class="header__text">
         <H1>OIL & GAS SERVICES </H1>
       </div>
 
@@ -44,9 +44,6 @@
              <li class="nav-item">
                <a class="nav-link"  href="NUESTROS-CLIENTES.HTML">CLIENTES</a>
              </li>
-             <li class="nav-item">
-               <a class="nav-link"  href="SERVICIOS.HTML">SERVICIOS</a>
-             </li>
              <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 CONTACTANOS
@@ -61,21 +58,26 @@
        </nav>
             <div>
               <section class="grid__SectionT">
-                  <article class="formulario1">
-                      <form class="formulario1__Flex"  action="" method="post" enctype="multipart/form-data">
-                          <label for="fname" > Nombre </label>              
-                          <input class="input" type="text" name="Nombre" id="fname">
-                          <label for="lname"> Apellido</label> 
-                          <input class="input" type="text" name="Apellido" id="lname">               
-                          <label for="email" > Correo electrónico</label>
-                          <input class="input" type="email" name="email" id="email">                                              
-                          <label for="file"> Adjuntar CV</label>
-                          <input type="file" name="file" id="file">                     
-                          <input type="submit" value="Enviar">
-                          <input type="reset" value="Limpiar Formulario">             
-                      </form>              
-       
-                  </article>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                         <article class="formulario1">
+                            <form class="formulario1__Flex"  action="" method="post" enctype="multipart/form-data">
+                            <label for="fname" > Nombre </label>              
+                            <input class="input" type="text" name="Nombre" id="fname">
+                            <label for="lname"> Apellido</label> 
+                            <input class="input" type="text" name="Apellido" id="lname">               
+                            <label for="email" > Correo electrónico</label>
+                            <input class="input" type="email" name="email" id="email">                                              
+                            <label for="file"> Adjuntar CV</label>
+                            <input type="file" name="file" id="file">                     
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar Formulario">             
+                          </form>  
+                         </article>
+                    </div>   
+                  </div>  
+                </div>
               </section>
           </div><br><br><br>
     </main>
@@ -84,7 +86,7 @@
       <div class="container">
          <div class="row ">
            <div class="col-3"> </div>
-           <div class=" col-6 "> <button >
+           <div class=" col-6 "> <button class="rounded ms-4" >
             <a href="TRABAJAR-CON-NOSOTROS.HTML"> Trabajar con nosotros</a> </button></div>
 
            <div class="col-3 "></div>

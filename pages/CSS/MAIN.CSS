@@ -1,349 +1,290 @@
+* {
+  margin: 0px;
+  padding: 0px; }
 
-* { margin: 0px;
-padding: 0px;}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
-header { 
-  display:  flex;
+.header__LogoEmpresa {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   
-}
-.header__LogoEmpresa { 
-  display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- margin-top: 3%; 
- width: 50%;
- }
- .header_text { 
-   text-align: center;
- }
-.imagenPrincipal { 
- width: 75%; 
- margin-left: 10%;
- height:100%;}
+  margin-top: 3%;
+  width: 50%; }
+
+.header__text {
+  text-align: center; }
+
+.imagenPrincipal {
+  width: 75%;
+  margin-left: 10%;
+  height: 100%; }
+
 h1 {
- color:rgb(92, 29, 29);
- font-size: 3em;
- font-family: Arial, Helvetica, sans-serif;
- font-weight: bold; 
- word-spacing: 0.5cm;
- margin-top: 5%;
- }
+  color: #5c1d1d;
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  word-spacing: 0.5cm;
+  margin-top: 5%; }
+
 .body {
-  background-image: url(../images/imagenFondo.jpg);
-}
+  background-image: url(../images/imagenFondo.jpg); }
 
- /* Esto es Grid */
-
- /* Grid Index */
-#grid__Body { 
+/* Esto es Grid */
+/* Grid Index */
+#grid__Body {
   display: grid;
-  grid-template-areas: 
-  " header header header header "
-  " menu menu menu menu "
-  " img img img img "
-  " img img img img "
-  " footer footer footer footer "; 
- grid-template-columns: 1fr 1fr 1fr 1fr;
- grid-template-rows: auto;}
- .grid__Head { 
-  grid-area: header;}
+  grid-template-areas: " header header header header " " menu menu menu menu " " img img img img " " img img img img " " footer footer footer footer ";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto; }
+
+.grid__Head {
+  grid-area: header; }
+
 .grid__Menu {
-  grid-area: menu; 
+  grid-area: menu;
   width: 90%;
-  margin-left: 5%;
- }
+  margin-left: 5%; }
+
 .grid__Img {
- grid-area: img;
- margin-top: 3%;
- width: 50%;}
-.grid__Footer {  
- grid-area: footer;}
+  grid-area: img;
+  margin-top: 3%;
+  width: 50%; }
 
- /* Grid Mision Vision Quienes somos*/
+.grid__Footer {
+  grid-area: footer; }
 
-#grid__Body--Vision { 
+/* Grid Mision Vision Quienes somos*/
+#grid__Body--Vision {
   display: grid;
-  grid-template-areas: 
-  " header header header header "
-  " menu menu menu menu "
-  " article article article article "
-  " footer footer footer footer "; 
- grid-template-columns: 1fr 1fr 1fr 1fr ;
- grid-template-rows: auto}
- .grid__Head { 
-  grid-area: header;
-  }
- .grid__MenuV {
+  grid-template-areas: " header header header header " " menu menu menu menu " " article article article article " " footer footer footer footer ";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto; }
+
+.grid__Head {
+  grid-area: header; }
+
+.grid__MenuV {
   grid-area: menu;
   width: 90%;
-  margin-left: 5%;
-  }
- .grid__Article {
+  margin-left: 5%; }
+
+.grid__Article {
   grid-area: article;
-  margin-left: 5%; width: 95%; }
-  .grid__Footer {
-    margin-top: 5%;
-   grid-area: footer;}
+  margin-left: 5%;
+  width: 95%; }
 
-  /* Grid Servicios*/
+.grid__Footer {
+  margin-top: 5%;
+  grid-area: footer; }
 
- #grid__Body--Servicios { 
+/* Grid Servicios*/
+#grid__Body--Servicios {
   display: grid;
-  grid-template-areas: 
-  " header header header header "
-  " menu menu menu menu "
-  " up up up up "
-  " down down down down "
-  " footer footer footer footer "; 
+  grid-template-areas: " header header header header " " menu menu menu menu " " up up up up " " down down down down " " footer footer footer footer ";
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto }
-  .grid__Head { 
-    grid-area: header;
-    }
+  grid-template-rows: auto; }
+
+.grid__Head {
+  grid-area: header; }
+
 .grid__MenuS {
-  grid-area: menu; 
+  grid-area: menu;
   width: 90%;
-  margin-left: 5%;
- }
+  margin-left: 5%; }
+
 .grid__Up {
- grid-area: Up;}
+  grid-area: Up; }
+
 .grid__Down {
- grid-area: Down;}
- .grid__Footer {
-  grid-area: footer;}
+  grid-area: Down; }
 
+.grid__Footer {
+  grid-area: footer; }
 
-  /* Grid Clientes*/
-
-#grid__Body--Clientes { 
+/* Grid Clientes*/
+#grid__Body--Clientes {
   display: grid;
-  grid-template-areas: 
-  " header header header header "
-  " menu menu menu menu "
-  " img img img img "
-  " img img img img "
-  " footer footer footer footer "; 
+  grid-template-areas: " header header header header " " menu menu menu menu " " img img img img " " img img img img " " footer footer footer footer ";
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto}
-  .grid__Head { 
-    grid-area: header;
-    }
+  grid-template-rows: auto; }
+
+.grid__Head {
+  grid-area: header; }
+
 .grid__MenuC {
-  grid-area: menu; 
+  grid-area: menu;
   width: 90%;
-  margin-left: 5%;
-  }
+  margin-left: 5%; }
+
 .grid__ImgC {
- grid-area: img;}
- .grid__Footer {
-  grid-area: footer;}
+  grid-area: img; }
 
-  /* Grid Contacto */
+.grid__Footer {
+  grid-area: footer; }
 
-#grid__Body--Contacto { 
+/* Grid Contacto */
+#grid__Body--Contacto {
   display: grid;
-  grid-template-areas: 
-  " header header header header "
-  " menu menu menu menu "
-  " section section section section "
-  " section section section section "
-  " footer footer footer footer "; 
- grid-template-columns: 1fr 1fr 1fr 1fr;
- grid-template-rows: auto }
- .grid__Head { 
-  grid-area: header;
-  }
- .grid__MenuC {
+  grid-template-areas: " header header header header " " menu menu menu menu " " section section section section " " section section section section " " footer footer footer footer ";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto; }
+
+.grid__Head {
+  grid-area: header; }
+
+.grid__MenuC {
   grid-area: menu;
   width: 90%;
-  margin-left: 5%;
-  }
- .grid__SectionC {
-  grid-area: section;
-  }
-  .grid__Footer {
-  
-   grid-area: footer;}
+  margin-left: 5%; }
 
-  /* Grid Trabajar  */
+.grid__SectionC {
+  grid-area: section; }
 
-#grid__Body--Trabajar { 
+.grid__Footer {
+  grid-area: footer; }
+
+/* Grid Trabajar  */
+#grid__Body--Trabajar {
   display: grid;
-  grid-template-areas: 
-  " header header header header "
-  " menu menu menu menu "
-  " section section section section "
-  " section section section section "
-  " footer footer footer footer "; 
- grid-template-columns: 1fr 1fr 1fr 1fr ;
- grid-template-rows: auto }
- .grid__Head { 
-  grid-area: header;
-   }
- .grid__MenuT {
+  grid-template-areas: " header header header header " " menu menu menu menu " " section section section section " " section section section section " " footer footer footer footer ";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto; }
+
+.grid__Head {
+  grid-area: header; }
+
+.grid__MenuT {
   grid-area: menu;
   width: 90%;
-  margin-left: 5%;;
-  }
- .grid__SectionT {
-  grid-area: section;
-  }
-  .grid__Footer {
-   grid-area: footer;}
-   @media screen and (max-width: 300px) { 
-    
-    .header { height: 50%; width: 50%;
-    }
-    #grid__Body{ 
-    grid-template-areas: 
-    "header header"
-    "menu menu"
-    "img img"
-    "footer footer"}
-  
-  }
+  margin-left: 5%; }
 
-  
-/* estos es menu*/ 
+.grid__SectionT {
+  grid-area: section; }
 
+.grid__Footer {
+  grid-area: footer; }
 
-.boton__Menu1 { 
- display: flex;
-flex-direction: row ; 
- justify-content: space-between; 
-flex-wrap: wrap;
-list-style: none; 
-font-family: Arial, Helvetica, sans-serif;
-font-size: 2em;
-font-weight: bold;
-transition: all 2s;
-color: rgb(7, 24, 80)
-} 
-.boton__Menu1 :hover { 
+/*media Queries*/
+@media screen and (max-width: 300px) {
+  .header {
+    height: 50%;
+    width: 50%; }
+  #grid__Body {
+    grid-template-areas: "header header" "menu menu" "img img" "footer footer"; } }
 
-background-color: rgb(218, 39, 27);
-
-}
-ul li a { 
-text-decoration: none; display: flex;
-flex-direction: row ;
-justify-content: center; color: rgb(7, 24, 80) ;
-}
-/* esto es footer*/
-
+/* Esto es footer aplicando SASS*/
 footer {
   display: flex;
   flex-direction: column;
-   justify-items: center;
-  justify-content: center;
-   }
-  
-  body footer button a {
-  color: rgb(192, 135, 13);
-  font-size: 1.5em; 
-  text-decoration: none; 
-  text-align: center;
-  justify-self: center;
-   
-  }   
-  body footer button { 
-   width: 75%;  
-   padding-left: 0px
-   ;}
-   footer div .row {
-   flex-wrap: nowrap; 
-   align-items: center;}
-  
+  justify-items: center;
+  justify-content: center; }
 
+footer button {
+  width: 75%;
+  padding-left: 0px;
+  border: 1.5px solid; }
+  footer button a {
+    color: #c0870d;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    justify-self: center; }
 
- 
-  .firma__Footer {
-  color: rgb(7, 24, 80);
+footer div .row {
+  flex-wrap: nowrap;
+  align-items: center; }
+
+.firma__Footer {
+  color: #071850;
   text-align: center;
-  font-family: sans-serif; 
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
+  font-weight: bold;
   margin-top: 3%;
-  font-size: 1.3em;
-  }
+  font-size: 1.3em; }
 
- 
-
-/* resto */
+/* Titulos de secciones */
 .titulo__1 {
-font-family: Arial, Helvetica, sans-serif;
-color: rgb(2, 12, 44);
-text-align: center;
-margin-left: 10%;
-margin-top: 5%;
-box-sizing: border-box;
-width: 80%; 
-height: 30%;
-padding: 5px;
-border: 1px;}
+  font-family: Arial, Helvetica, sans-serif;
+  color: #020c2c;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 11%;
+  margin-top: 5%;
+  box-sizing: border-box;
+  width: 80%;
+  height: 30%;
+  padding: 5px;
+  border: 1px; }
+
 .titulo__2 {
-color: rgb(160, 12, 12);
-text-align: center;
-margin-top: 2%;}
+  color: #a00c0c;
+  text-align: center;
+  margin-top: 2%; }
 
-
-/* esto es texto de secciones */
+/* Esto es texto de secciones */
 .parrafoTxt {
-box-sizing: border-box; 
-font-family: 'Open Sans', sans-serif; 
-font-weight: bold;
-background-color: rgb(177, 177, 180); 
-opacity: 0.8;
-font-size: 120% ;
-width: 90%;
-margin-left: 5%;
-margin-top: 3%;
-text-align: justify;
-line-height: 2.5; 
-word-spacing: normal;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  background-color: #b1b1b4;
+  opacity: 0.8;
+  font-size: 120%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+  text-align: justify;
+  line-height: 2.5;
+  word-spacing: normal; }
 
-}
+/* Esto es tablas en la pagina servicios */
+.tabla__Th {
+  color: #f3f1ed;
+  border-style: groove;
+  font-style: italic;
+  font-weight: bold; }
 
-   /* esto es tablas en la pagina servicios */
-.tabla__Th { 
-color: rgb(243, 241, 237); 
-border-style: groove;
-font-style: italic;
-font-weight: bold; }
-.Tabla__Tr { 
-color: rgb(182, 174, 159); 
-border-style: groove; 
-font-weight: bold; }
+.Tabla__Tr {
+  color: #b6ae9f;
+  border-style: groove;
+  font-weight: bold; }
+
 .tabla {
-margin-left: 5%; 
-margin-bottom: 10%;
-width: 90%;}
+  margin-left: 5%;
+  margin-bottom: 10%;
+  width: 90%; }
 
-/* esto es formulario de contacto y trabajar con nosotros*/
-.formulario1 { 
-display: block; 
-margin-left: 35%; 
-margin-top: 3%;}
-.formulario1__Flex { 
-box-sizing: border-box; 
-width: 50%; 
-height: 50%; 
-font-family: Arial, Helvetica, sans-serif;
-color: rgb(243, 241, 237);
-display: flex; ;
-flex-direction: column; 
-align-content: center;}
-.input { 
-background: white; 
-transition: all 2s}
+/* Esto es formulario de contacto y trabajar con nosotros*/
+.formulario1 {
+  display: block;
+  margin-left: 20%;
+  margin-top: 3%; }
+
+.formulario1__Flex {
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f3f1ed;
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+.input {
+  background: white;
+  transition: all 2s; }
+
 .input:focus {
- zoom: 180%;}
+  zoom: 180%; }
 
+/* Esto es de pagina de Clientes*/
 .clientes {
-box-sizing: border-box; 
-height: 80%;
-width: 40%; 
-margin-top: 4%;}
+  box-sizing: border-box;
+  margin-top: 4%; }
