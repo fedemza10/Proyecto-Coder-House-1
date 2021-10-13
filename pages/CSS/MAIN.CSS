@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px; }
@@ -20,6 +21,7 @@ header {
   text-align: center; }
 
 .imagenPrincipal {
+  /* Operacion con SASS */
   width: 75%;
   margin-left: 10%;
   height: 100%; }
@@ -34,6 +36,13 @@ h1 {
 
 .body {
   background-image: url(../images/imagenFondo.jpg); }
+
+/* Esto es Menú modificado con SASS*/
+.navbar-brand {
+  color: #c0870d; }
+
+.nav-link {
+  color: #c0870d; }
 
 /* Esto es Grid */
 /* Grid Index */
@@ -186,6 +195,7 @@ footer {
   justify-content: center; }
 
 footer button {
+  /* Operacion con SASS */
   width: 75%;
   padding-left: 0px;
   border: 1.5px solid; }
@@ -203,7 +213,7 @@ footer div .row {
   align-items: center; }
 
 .firma__Footer {
-  color: #071850;
+  color: #2441a3;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
@@ -254,7 +264,7 @@ footer div .row {
   font-weight: bold; }
 
 .Tabla__Tr {
-  color: #b6ae9f;
+  color: #f3f1ed;
   border-style: groove;
   font-weight: bold; }
 
@@ -279,7 +289,7 @@ footer div .row {
   align-content: center; }
 
 .input {
-  background: white;
+  background: #f3f1ed;
   transition: all 2s; }
 
 .input:focus {

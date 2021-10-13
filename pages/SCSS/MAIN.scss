@@ -2,6 +2,14 @@
 * { margin: 0px;
 padding: 0px;}
 
+$color-H1: rgb(92, 29, 29);
+$color-titulo1: rgb(2, 12, 44);
+$color-titulo2: rgb(160, 12, 12);
+$color-blanco:rgb(243, 241, 237);
+$color-amarillo: rgb(192, 135, 13);
+$color-fondoparrafo: rgb(177, 177, 180);
+$color-firma: rgb(36, 65, 163);
+
 header { 
   display:  flex;
   flex-direction: column;
@@ -20,12 +28,15 @@ header {
  .header__text { 
    text-align: center;
  }
+ 
 .imagenPrincipal { 
- width: 75%; 
+  /* Operacion con SASS */
+ width: 50% + 25;   
  margin-left: 10%;
  height:100%;}
+
 h1 {
- color:rgb(92, 29, 29);
+ color:$color-H1;
  font-size: 3em;
  font-family: Arial, Helvetica, sans-serif;
  font-weight: bold; 
@@ -35,6 +46,10 @@ h1 {
 .body {
   background-image: url(../images/imagenFondo.jpg);
 }
+/* Esto es Menú modificado con SASS*/
+
+.navbar-brand {color:$color-amarillo;}
+.nav-link { color:$color-amarillo;}
 
  /* Esto es Grid */
 
@@ -220,14 +235,15 @@ footer {
   justify-content: center;
 }
    footer button {
-    width: 75%;  
+ /* Operacion con SASS */
+    width: 25% * 3;  
     padding-left: 0px;
     border: 1.5px solid;
      
       
   
       a {
-      color: rgb(192, 135, 13);
+      color: $color-amarillo;
       font-size: 1.5em; 
       font-weight: bold;
       text-decoration: none; 
@@ -242,15 +258,11 @@ footer {
    footer div .row {
    flex-wrap: nowrap;    
    align-items: center;}
-   
-   
-   
   
+   
 
-
- 
   .firma__Footer {
-  color: rgb(7, 24, 80);
+  color: $color-firma ;
   text-align: center;
   font-family: 'Open Sans', sans-serif; 
   font-style: italic;
@@ -259,12 +271,11 @@ footer {
   font-size: 1.3em;
   }
 
- 
 
 /* Titulos de secciones */
 .titulo__1 {
 font-family: Arial, Helvetica, sans-serif;
-color: rgb(2, 12, 44);
+color: $color-titulo1;
 font-weight: bold;
 text-align: center;
 margin-left: 11%;
@@ -275,7 +286,7 @@ height: 30%;
 padding: 5px;
 border: 1px;}
 .titulo__2 {
-color: rgb(160, 12, 12);
+color: $color-titulo2;
 font-family: Arial, Helvetica, sans-serif;
 text-align: center;
 margin-top: 2%;}
@@ -286,7 +297,7 @@ margin-top: 2%;}
 box-sizing: border-box; 
 font-family: 'Open Sans', sans-serif; 
 font-weight: bold;
-background-color: rgb(177, 177, 180); 
+background-color:$color-fondoparrafo; 
 opacity: 0.8;
 font-size: 120% ;
 width: 90%;
@@ -300,12 +311,12 @@ word-spacing: normal;
 
    /* Esto es tablas en la pagina servicios */
 .tabla__Th { 
-color: rgb(243, 241, 237); 
+color: $color-blanco; 
 border-style: groove;
 font-style: italic;
 font-weight: bold; }
 .Tabla__Tr { 
-color: rgb(182, 174, 159); 
+color: $color-blanco; 
 border-style: groove; 
 font-weight: bold; }
 .tabla {
@@ -322,12 +333,12 @@ box-sizing: border-box;
 width: 50%; 
 height: 50%; 
 font-family: Arial, Helvetica, sans-serif;
-color: rgb(243, 241, 237);
+color: $color-blanco;
 display: flex; ;
 flex-direction: column; 
 align-content: center;}
 .input { 
-background: white; 
+background: $color-blanco; 
 transition: all 2s}
 .input:focus {
  zoom: 180%;}
