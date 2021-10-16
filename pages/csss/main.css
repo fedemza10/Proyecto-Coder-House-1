@@ -48,7 +48,11 @@ h1 {
 /* Grid Index */
 #grid__Body {
   display: grid;
-  grid-template-areas: " header header header header " " menu menu menu menu " " img img img img " " img img img img " " footer footer footer footer ";
+  grid-template-areas: " header header header header "
+ " menu menu menu menu "
+ " img img img img "
+ " img img img img "
+ " footer footer footer footer ";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto; }
 
@@ -71,7 +75,10 @@ h1 {
 /* Grid Mision Vision Quienes somos*/
 #grid__Body--Vision {
   display: grid;
-  grid-template-areas: " header header header header " " menu menu menu menu " " article article article article " " footer footer footer footer ";
+  grid-template-areas: " header header header header "
+ " menu menu menu menu "
+ " article article article article "
+ " footer footer footer footer ";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto; }
 
@@ -95,7 +102,11 @@ h1 {
 /* Grid Servicios*/
 #grid__Body--Servicios {
   display: grid;
-  grid-template-areas: " header header header header " " menu menu menu menu " " up up up up " " down down down down " " footer footer footer footer ";
+  grid-template-areas: " header header header header "
+ " menu menu menu menu "
+ " up up up up "
+ " down down down down "
+ " footer footer footer footer ";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto; }
 
@@ -119,7 +130,11 @@ h1 {
 /* Grid Clientes*/
 #grid__Body--Clientes {
   display: grid;
-  grid-template-areas: " header header header header " " menu menu menu menu " " img img img img " " img img img img " " footer footer footer footer ";
+  grid-template-areas: " header header header header "
+ " menu menu menu menu "
+ " img img img img "
+ " img img img img "
+ " footer footer footer footer ";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto; }
 
@@ -140,7 +155,11 @@ h1 {
 /* Grid Contacto */
 #grid__Body--Contacto {
   display: grid;
-  grid-template-areas: " header header header header " " menu menu menu menu " " section section section section " " section section section section " " footer footer footer footer ";
+  grid-template-areas: " header header header header "
+ " menu menu menu menu "
+ " section section section section "
+ " section section section section "
+ " footer footer footer footer ";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto; }
 
@@ -161,7 +180,11 @@ h1 {
 /* Grid Trabajar  */
 #grid__Body--Trabajar {
   display: grid;
-  grid-template-areas: " header header header header " " menu menu menu menu " " section section section section " " section section section section " " footer footer footer footer ";
+  grid-template-areas: " header header header header "
+ " menu menu menu menu "
+ " section section section section "
+ " section section section section "
+ " footer footer footer footer ";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto; }
 
@@ -185,7 +208,10 @@ h1 {
     height: 50%;
     width: 50%; }
   #grid__Body {
-    grid-template-areas: "header header" "menu menu" "img img" "footer footer"; } }
+    grid-template-areas: "header header"
+ "menu menu"
+ "img img"
+ "footer footer"; } }
 
 /* Esto es footer aplicando SASS*/
 footer {
