@@ -3,12 +3,12 @@
 padding: 0px;}
 
 $color-H1: rgb(92, 29, 29);
-$color-titulo1: rgb(62, 90, 184);
+$color-titulo1: rgb(64, 82, 139);
 $color-titulo2: rgb(160, 12, 12);
 $color-blanco:rgb(243, 241, 237);
 $color-amarillo: rgb(192, 135, 13);
 $color-fondoparrafo: rgb(177, 177, 180);
-$color-firma: rgb(36, 65, 163);
+$color-firma: rgb(243, 241, 237);
 
 header { 
   display:  flex;
@@ -275,7 +275,7 @@ footer {
 /* Titulos de secciones */
 .titulo__1 {
 font-family: Arial, Helvetica, sans-serif;
-color: $color-titulo1;
+color: $color-titulo1 ;
 font-weight: bold;
 text-align: center;
 margin-left: 11%;
