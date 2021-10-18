@@ -2,13 +2,9 @@
 * { margin: 0px;
 padding: 0px;}
 
-$color-H1: rgb(92, 29, 29);
-$color-titulo1: rgb(64, 82, 139);
-$color-titulo2: rgb(160, 12, 12);
-$color-blanco:rgb(243, 241, 237);
-$color-amarillo: rgb(192, 135, 13);
-$color-fondoparrafo: rgb(177, 177, 180);
-$color-firma:  #2441a3;
+@import "modules/colors";
+@import "modules/width";
+
 
 header { 
   display:  flex;
@@ -23,7 +19,7 @@ header {
  justify-content: center;
  align-items: center;
  margin-top: 3%; 
- width: 50%;
+ width: $ancho * 5;
  }
  .header__text { 
    text-align: center;
@@ -31,7 +27,7 @@ header {
  
 .imagenPrincipal { 
   /* Operacion con SASS */
- width: 50% + 25;   
+ width: ($ancho * 7) + 5;   
  margin-left: 10%;
  height:100%;}
 
@@ -69,13 +65,13 @@ h1 {
   grid-area: header;}
 .grid__Menu {
   grid-area: menu; 
-  width: 90%;
+  width: $ancho * 9;
   margin-left: 5%;
  }
 .grid__Img {
  grid-area: img;
  margin-top: 3%;
- width: 50%;}
+ width: $ancho * 5;}
 .grid__Footer {  
  grid-area: footer;}
 
@@ -95,12 +91,14 @@ h1 {
   }
  .grid__MenuV {
   grid-area: menu;
-  width: 90%;
+  width: $ancho * 9;
   margin-left: 5%;
   }
  .grid__Article {
   grid-area: article;
-  margin-left: 5%; width: 95%; }
+  margin-left: 5%; 
+  /* Operacion con SASS */
+  width: ($ancho * 10) - 5 ; }
   .grid__Footer {
     margin-top: 5%;
    grid-area: footer;}
@@ -122,7 +120,7 @@ h1 {
     }
 .grid__MenuS {
   grid-area: menu; 
-  width: 90%;
+  width: $ancho * 9;
   margin-left: 5%;
  }
 .grid__Up {
@@ -150,7 +148,8 @@ h1 {
     }
 .grid__MenuC {
   grid-area: menu; 
-  width: 90%;
+  /* Operacion con SASS */
+  width: ($ancho * 10) - 10;
   margin-left: 5%;
   }
 .grid__ImgC {
@@ -175,7 +174,7 @@ h1 {
   }
  .grid__MenuC {
   grid-area: menu;
-  width: 90%;
+  width: $ancho * 9;
   margin-left: 5%;
   }
  .grid__SectionC {
@@ -202,7 +201,7 @@ h1 {
    }
  .grid__MenuT {
   grid-area: menu;
-  width: 90%;
+  width: $ancho * 9;
   margin-left: 5%;;
   }
  .grid__SectionT {
@@ -215,7 +214,8 @@ h1 {
 
    @media screen and (max-width: 300px) { 
     
-    .header { height: 50%; width: 50%;
+    .header { height: 50%;
+       width: $ancho * 5;
     }
     #grid__Body{ 
     grid-template-areas: 
@@ -236,7 +236,7 @@ footer {
 }
    footer button {
  /* Operacion con SASS */
-    width: 25% * 3;  
+    width: ($ancho * 15) / 2;  
     padding-left: 0px;
     border: 1.5px solid;
      
@@ -281,7 +281,7 @@ text-align: center;
 margin-left: 11%;
 margin-top: 5%;
 box-sizing: border-box;
-width: 80%; 
+width: $ancho * 8; 
 height: 30%;
 padding: 5px;
 border: 1px;}
@@ -300,7 +300,7 @@ font-weight: bold;
 background-color:$color-fondoparrafo; 
 opacity: 0.8;
 font-size: 120% ;
-width: 90%;
+width: $ancho * 9;
 margin-left: 5%;
 margin-top: 3%;
 text-align: justify;
@@ -321,7 +321,7 @@ border-style: groove;
 font-weight: bold; }
 .tabla { 
 margin-bottom: 10%;
-width: 90%;}
+width: $ancho * 9;}
 
 /* Esto es formulario de contacto y trabajar con nosotros*/
 .formulario1 { 
@@ -329,7 +329,7 @@ display: block;
 margin-top: 3%;}
 .formulario1__Flex { 
 box-sizing: border-box; 
-width: 50%; 
+width: $ancho * 5; 
 height: 50%; 
 font-family: Arial, Helvetica, sans-serif;
 color: $color-blanco;

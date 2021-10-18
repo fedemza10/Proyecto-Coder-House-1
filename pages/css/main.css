@@ -86,6 +86,7 @@ h1 {
 .grid__Article {
   grid-area: article;
   margin-left: 5%;
+  /* Operacion con SASS */
   width: 95%; }
 
 .grid__Footer {
@@ -128,6 +129,7 @@ h1 {
 
 .grid__MenuC {
   grid-area: menu;
+  /* Operacion con SASS */
   width: 90%;
   margin-left: 5%; }
 
