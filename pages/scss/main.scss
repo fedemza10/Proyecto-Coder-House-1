@@ -10,8 +10,7 @@ header {
   display:  flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-   
+  align-items: center;   
 }
 .header__LogoEmpresa { 
   display: flex;
@@ -39,13 +38,26 @@ h1 {
  word-spacing: 0.5cm;
  margin-top: 5%;
  }
-.body {
-  background-image: url(../images/imagenfondo.jpg);
-}
+ .body { width: 100%;}
+
+.background__Header { background-image: linear-gradient(to bottom left, rgb(110, 162, 240), rgb(243, 95, 10));
+  width:100%; 
+  height: 100%; }
+.background__Main { background-image: linear-gradient(to bottom right, rgb(243, 95, 10), rgb(110, 162, 240));
+  width:100%; 
+  height: 100%;
+  margin-right: 0;
+ margin-bottom: 3%;} 
+.background__Footer { background-image: linear-gradient(to bottom left, rgb(57, 59, 63), rgb(15, 26, 92));
+  width:100%; 
+  height: 100%;
+  margin-top: 0;} 
+
 /* Esto es Menú modificado con SASS*/
 
 .navbar-brand {color:$color-amarillo;}
-.nav-link { color:$color-amarillo;}
+ .nav-link{ color:$color-amarillo;}
+
 
  /* Esto es Grid */
 
@@ -65,15 +77,16 @@ h1 {
   grid-area: header;}
 .grid__Menu {
   grid-area: menu; 
-  width: $ancho * 9;
-  margin-left: 5%;
+  width: $ancho * 10;
+  
  }
 .grid__Img {
  grid-area: img;
  margin-top: 3%;
  width: $ancho * 5;}
 .grid__Footer {  
- grid-area: footer;}
+ grid-area: footer;
+ margin-top: 0;}
 
  /* Grid Mision Vision Quienes somos*/
 
@@ -91,17 +104,18 @@ h1 {
   }
  .grid__MenuV {
   grid-area: menu;
-  width: $ancho * 9;
-  margin-left: 5%;
+  width: $ancho * 10;
   }
  .grid__Article {
   grid-area: article;
-  margin-left: 5%; 
+  margin-left: 5%
+  ; 
   /* Operacion con SASS */
   width: ($ancho * 10) - 5 ; }
   .grid__Footer {
-    margin-top: 5%;
-   grid-area: footer;}
+    grid-area: footer;
+    margin-top: 0;
+  }
 
   /* Grid Servicios*/
 
@@ -120,13 +134,15 @@ h1 {
     }
 .grid__MenuS {
   grid-area: menu; 
-  width: $ancho * 9;
-  margin-left: 5%;
+  width: $ancho * 10;
+  ;
  }
 .grid__Up {
- grid-area: Up;}
+ grid-area: Up;
+ }
 .grid__Down {
- grid-area: Down;}
+ grid-area: Down;
+}
  .grid__Footer {
   grid-area: footer;}
 
@@ -149,8 +165,8 @@ h1 {
 .grid__MenuC {
   grid-area: menu; 
   /* Operacion con SASS */
-  width: ($ancho * 10) - 10;
-  margin-left: 5%;
+  width: ($ancho * 11) - 10;
+  
   }
 .grid__ImgC {
  grid-area: img;}
@@ -174,11 +190,12 @@ h1 {
   }
  .grid__MenuC {
   grid-area: menu;
-  width: $ancho * 9;
-  margin-left: 5%;
+  width: $ancho * 10;
+  
   }
  .grid__SectionC {
   grid-area: section;
+  
   }
   .grid__Footer {
   
@@ -201,8 +218,8 @@ h1 {
    }
  .grid__MenuT {
   grid-area: menu;
-  width: $ancho * 9;
-  margin-left: 5%;;
+  width: $ancho * 10;
+  
   }
  .grid__SectionT {
   grid-area: section;
@@ -233,12 +250,14 @@ footer {
   flex-direction: column;
   justify-items: center;
   justify-content: center;
+  margin-top: 0px;
 }
    footer button {
  /* Operacion con SASS */
-    width: ($ancho * 15) / 2;  
+    width: ($ancho * 15) / 2 + 2;  
     padding-left: 0px;
     border: 1.5px solid;
+    margin-top: 5%;
      
       
   

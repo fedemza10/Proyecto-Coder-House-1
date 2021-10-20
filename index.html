@@ -30,20 +30,24 @@
 <body class="body" id="grid__Body"> 
   
  <!--HEADER-->
-    <header class="grid__Head">      
+    <header class="grid__Head background__Header">      
 
         <img class="header__LogoEmpresa " src="./pages/images/clear_logo.jpg" alt="logo de la empresa">
 
       
         <div class="header__text">
+          <div class="row">
+            <div class="col">
           <H1>OIL & GAS SERVICES </H1>
+            </div>
+          </div> 
         </div>
 
      </header>
 
     <!--MENU-->
     
-    <main class=" grid__Menu">
+    <main class=" grid__Menu background__Main">
         <nav class="navbar navbar-expand-lg navbar-link bg-light ">
           <div class="container ">
             <a class="navbar-brand active" aria-current="page" href="./index.html">INICIO</a>
@@ -115,8 +119,8 @@
        <!-- "QUE HACEMOS" EXPLICADO CON CARDS DE BOOTSTRAP Y LINKEADO-->
 
        <div class="container">
-        <div class="row mt-5">
-          <div class="col"> <div class="card" style="width: 18rem;">
+        <div class="row mt-5  ">
+          <div class="col d-flex justify-content-center my-2"> <div class="card" style="width: 18rem;" >
             <img src="./pages/images/yacvm.jpg" class="card-img-top" alt="yacimiento">
             <div class="card-body">
               <h5 class="card.title"> UPSTREAM</h5>
@@ -124,7 +128,7 @@
                 <a class=" btn btn-primary" href="./pages/servicios.html">  CONOCÉ NUESTRAS OPERACIONES </a>
             </div>
           </div> </div>    
-          <div class="col"><div class="card" style="width: 18rem;">
+          <div class="col  d-flex justify-content-center my-2 "><div class="card" style="width: 18rem;">
             <img src="./pages/images/rlp.jpg" class="card-img-top" alt="rlc">
             <div class="card-body">
               <h5 class="card.title"> DOWNSTREAM</h5>
@@ -133,7 +137,7 @@
             </div>
            </div>  
           </div>
-          <div class="col"><div class="card" style="width: 18rem;">
+          <div class="col  d-flex justify-content-center my-2 "><div class="card" style="width: 18rem;">
             <img src="./pages/images/yacvm2.jpg" class="card-img-top" alt="yacVM2">
             <div class="card-body">
               <h5 class="card.title"> SHALE OIL & GAS: </h5>
@@ -153,11 +157,11 @@
 
     <!--FOOTER-->
 
-    <footer class="grid__Footer" >
+    <footer class="grid__Footer background__Footer" >
       <div class="container">
          <div class="row ">
            <div class="col-3"> </div>
-           <div class=" col-6"> <button class="rounded ms-4" >
+           <div class=" col-6 d-flex justify-content-center"> <button class="rounded ms-3" >
             <a href="./pages/trabajar-con-nosotros.html"> Trabajar con nosotros</a> </button></div>        
           
          </div> 

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body class="body" id="grid__Body--Contacto">
-    <header class="grid__Head">
+    <header class="grid__Head background__Header">
       
 
         <img class="header__LogoEmpresa " src="./images/clear_logo.jpg" alt="logo de la empresa">
@@ -29,7 +29,7 @@
 
     <!--MENU-->
 
-    <main class="grid__MenuC">
+    <main class="grid__MenuC background__Main">
         <nav class="navbar navbar-expand-lg navbar-link bg-light">
             <div class="container ">
              <a class="navbar-brand " href="../index.html">INICIO</a>
@@ -71,7 +71,10 @@
 
             <div>
                 <section class="grid__SectionC" >
-                    <article class=" formulario1 " >
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                       <article class=" formulario1 " >
                         <form class="formulario1__Flex ms-5" action="" method="post" enctype="multipart/form-data" >
                             <label for="fname" > Nombre </label>                
                             <input class="input" type="text" name="Nombre" id="fname">
@@ -96,39 +99,41 @@
                             <textarea name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea> <br>
                             <input type="submit" value="Enviar">
                             <input type="reset" value="Limpiar Formulario">             
-                        </form>              
-         
-                    </article>
-                </section>
+                        </form>  
+                       </article>           
+                      </div>
+                    </div>
+                  
+              </section>
             </div>
     
-            <!--CERTIFICADOS DE CALIDAD-->
+            <!--CERTIFICADOS CALIDAD-->  
 
-            <div class="container">
-              <div class="row mt-5">
-                <div class="col"> <button class="rounded">  
-                  <a href="https://www.iram.org.ar/"> <img src="./images/ambiental.jpg" alt="ambiental"></a></button> </div>
-                <div class="col"> <button class="rounded"> 
-                   <a href="https://www.iram.org.ar/"> <img src="./images/calidad.jpg" alt="calidad"></a></button> </div>
-                <div class="col"> <button class="rounded"> 
-                   <a href="https://www.iram.org.ar/"> <img src="./images/syso.jpg" alt="syso"></a></button>
-                  </div>
-                <div class="col"> <button class="rounded"> 
-                   <a href="https://www.iqnet-certification.com/"> <img src="./images/iqnet.png" alt="iqnet"></a></button>
-                 </div>
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col d-flex justify-content-center my-2"> <button class="rounded">  
+              <a href="https://www.iram.org.ar/"> <img src="./images/ambiental.jpg" alt="ambiental"></a></button> </div>
+            <div class="col d-flex justify-content-center my-2"> <button class="rounded"> 
+               <a href="https://www.iram.org.ar/"> <img src="./images/calidad.jpg" alt="calidad"></a></button> </div>
+            <div class="col d-flex justify-content-center my-2"> <button class="rounded"> 
+               <a href="https://www.iram.org.ar/"> <img src="./images/syso.jpg" alt="syso"></a></button>
               </div>
-            </div>
+            <div class="col d-flex justify-content-center my-2"> <button class="rounded"> 
+               <a href="https://www.iqnet-certification.com/"> <img src="./images/iqnet.png" alt="iqnet"></a></button>
+             </div>
+          </div>
+        </div>
     </main>
   
     
     <!--FOOTER-->
 
-    <footer class="grid__Footer" >
+    <footer class="grid__Footer background__Footer" >
       <div class="container">
          <div class="row ">
            <div class="col-3"> </div>
-           <div class=" col-6"> <button class="rounded ms-4" >
-            <a href="trabajar-con-nosotros.html"> Trabajar con nosotros</a> </button></div>        
+           <div class=" col-6 d-flex justify-content-center"> <button class="rounded ms-3" >
+            <a href="./pages/trabajar-con-nosotros.html"> Trabajar con nosotros</a> </button></div>        
           
          </div> 
       </div>
