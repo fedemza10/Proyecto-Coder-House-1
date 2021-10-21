@@ -2,6 +2,8 @@
 * { margin: 0px;
 padding: 0px;}
 
+
+
 @import "modules/colors";
 @import "modules/width";
 
@@ -43,15 +45,29 @@ h1 {
   height: 100%;
   margin-right: 0;
  margin-bottom: 3%;} 
+.background__Card { background-image: linear-gradient(to top left, rgb(243, 95, 10), rgb(110, 162, 240));}
+  
 .background__Footer { background-image: linear-gradient(to bottom left, rgb(57, 59, 63), rgb(15, 26, 92));
   width:100%; 
   height: 100%;
   margin-top: 0;} 
 
+  
+
 /* Esto es Menú modificado con SASS*/
 
 .navbar-brand {color:$color-amarillo;}
- .nav-link{ color:$color-amarillo;}
+.nav-link { color:$color-amarillo;}
+.dropdown li a { color:$color-amarillo}
+.navbar-light { color:$color-amarillo}
+
+
+
+
+
+.card.title .card-text  { color: rgb(0, 0, 0) ;
+font-weight: bolder; }
+
 
 
  /* Esto es Grid */

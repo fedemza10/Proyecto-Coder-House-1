@@ -43,6 +43,9 @@ h1 {
   margin-right: 0;
   margin-bottom: 3%; }
 
+.background__Card {
+  background-image: linear-gradient(to top left, #f35f0a, #6ea2f0); }
+
 .background__Footer {
   background-image: linear-gradient(to bottom left, #393b3f, #0f1a5c);
   width: 100%;
@@ -55,6 +58,16 @@ h1 {
 
 .nav-link {
   color: #c0870d; }
+
+.dropdown li a {
+  color: #c0870d; }
+
+.navbar-light {
+  color: #c0870d; }
+
+.card.title .card-text {
+  color: black;
+  font-weight: bolder; }
 
 /* Esto es Grid */
 /* Grid Index */
