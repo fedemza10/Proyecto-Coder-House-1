@@ -20,12 +20,6 @@ header {
 .header__text {
   text-align: center; }
 
-.imagenPrincipal {
-  /* Operacion con SASS */
-  width: 75%;
-  margin-left: 10%;
-  height: 100%; }
-
 h1 {
   color: #5c1d1d;
   font-size: 3em;
@@ -86,7 +80,7 @@ h1 {
   grid-area: footer;
   margin-top: 0; }
 
-/* Grid Mision Vision Quienes somos*/
+/* Grid Mision - Vision - Quienes somos*/
 #grid__Body--Vision {
   display: grid;
   grid-template-areas: " header header header header " " menu menu menu menu " " article article article article " " footer footer footer footer ";
@@ -276,13 +270,11 @@ footer div .row {
 /* Esto es tablas en la pagina servicios */
 .tabla__Th {
   color: #f3f1ed;
-  border-style: groove;
   font-style: italic;
   font-weight: bold; }
 
 .Tabla__Tr {
   color: #f3f1ed;
-  border-style: groove;
   font-weight: bold; }
 
 .tabla {

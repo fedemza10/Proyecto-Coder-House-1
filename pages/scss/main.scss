@@ -10,7 +10,8 @@ header {
   display:  flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;   
+  align-items: center;  
+  ; 
 }
 .header__LogoEmpresa { 
   display: flex;
@@ -24,12 +25,6 @@ header {
    text-align: center;
  }
  
-.imagenPrincipal { 
-  /* Operacion con SASS */
- width: ($ancho * 7) + 5;   
- margin-left: 10%;
- height:100%;}
-
 h1 {
  color:$color-H1;
  font-size: 3em;
@@ -38,7 +33,7 @@ h1 {
  word-spacing: 0.5cm;
  margin-top: 5%;
  }
- .body { width: 100%;}
+ .body {  width: 100%; }
 
 .background__Header { background-image: linear-gradient(to bottom left, rgb(110, 162, 240), rgb(243, 95, 10));
   width:100%; 
@@ -88,7 +83,7 @@ h1 {
  grid-area: footer;
  margin-top: 0;}
 
- /* Grid Mision Vision Quienes somos*/
+ /* Grid Mision - Vision - Quienes somos*/
 
 #grid__Body--Vision { 
   display: grid;
@@ -292,6 +287,7 @@ footer {
 
 
 /* Titulos de secciones */
+
 .titulo__1 {
 font-family: Arial, Helvetica, sans-serif;
 color: $color-titulo1 ;
@@ -312,6 +308,7 @@ margin-top: 2%;}
 
 
 /* Esto es texto de secciones */
+
 .parrafoTxt {
 box-sizing: border-box; 
 font-family: 'Open Sans', sans-serif; 
@@ -329,20 +326,20 @@ word-spacing: normal;
 }
 
    /* Esto es tablas en la pagina servicios */
+
 .tabla__Th { 
 color: $color-blanco; 
-border-style: groove;
 font-style: italic;
 font-weight: bold; }
 .Tabla__Tr { 
-color: $color-blanco; 
-border-style: groove; 
+color: $color-blanco;  
 font-weight: bold; }
 .tabla { 
 margin-bottom: 10%;
 width: $ancho * 9;}
 
 /* Esto es formulario de contacto y trabajar con nosotros*/
+
 .formulario1 { 
 display: block; 
 margin-top: 3%;}
@@ -360,7 +357,9 @@ background: $color-blanco;
 transition: all 2s}
 .input:focus {
  zoom: 180%;}
+
 /* Esto es de pagina de Clientes*/
+
 .clientes {
 box-sizing: border-box; 
  
