@@ -47,8 +47,8 @@
      
 <div>
   <h2> AGRADECIMIENTOS</h2>
-     <p> Especial agradecimiento a Darío Capdevila por haber transmitido sus conocimientos en forma tan didácica e inteligible. Sus conceptos fueron tan claros que, hasta
-         un "néofito" en la materia como el que suscribe, logró comprender conceptos tan ajenos como interesantes. 
+     <p> Especial agradecimiento al profesor del curso, Darío Capdevila por haber transmitido sus conocimientos en forma tan didácica e inteligible. Sus conceptos fueron tan   
+         claros que, hasta un "néofito" en la materia como el que suscribe, logró comprender conceptos tan ajenos como interesantes.<br> 
          Párrafo aparte, quiero agradecer a quien me fuera asignada como tutora, Eimy Blanco. Eimy tuvo la suficiente claridad conceptual y solvencia, como para poder
          inducirme a analizar todos y cada uno de los errores cometidos y alcanzar la solución más eficiente posible; sin dudas, una gran guía. 
          </p>
